@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(100deg,#14b9da,#9c37e3);
+}
+.container{
+    width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #9c37e3;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+.task-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255,0.5);
+    background-color: transparent;
+    outline: none;
+    padding: 12px;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#add{
+    height: 40px;
+    width: 15%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    background-color: #14b9da;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+}
+.counter{
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+#taskCount{
+    color: #14b9da;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    height: 44px;
+    border-radius: 4px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    /* background-color: #14b9da; */
+    padding: 12px;
+    margin-top: 15px;
+}
+.taskName{
+    margin-left: 5px;
+    width: 70%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    outline: none;
+}
+.check{
+    aspect-ratio: 1/1;
+    height: 16px;
+    cursor: pointer;
+}
+.edit, .delete{
+    padding: 6px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+.delete{
+    background-color: red;
+}
+/* used by javascipt */
+.completed{
+    text-decoration: line-through;
+    color: rgb(173, 169, 169);
+}
